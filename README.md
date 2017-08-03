@@ -3,10 +3,20 @@ A workflow for KRPano Tools (commercial product) to process VRay or GearVR panor
 
 Based on workflow outlined in this forum post https://krpano.com/forum/wbb/index.php?page=Thread&postID=69908
 
-## Setup
+## Requirements
+
+### Pillow
+for image processing
+```
+$ pip install Pillow
+```
+http://pillow.readthedocs.io/en/3.0.x/installation.html
+
+### KRPano Tools
 KRPano Tools is required to be installed and registered.
 http://krpano.com/download/
 
+## Setup
 `KRPANO_BASE_DIR` constant needs to point to the installation path for KRPano Tools (must be set in 2 files currently):
 * run_kr_make_tour.py
 * slices_to_sphere.py
