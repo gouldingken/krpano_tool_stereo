@@ -38,9 +38,3 @@ def make_tour(tour_name, scenes):
             shutil.rmtree(os.path.join(scene['pano_folder'], 'slices', prefix, 'vtour'))
 
     generate_xml(scenes, tour_name)
-
-
-make_tour('test_tour_1', [
-    {'id': 'view_a', 'title': 'Entry Way', 'pano_folder': 'VR-VIEW-A_denoiser'},
-    {'id': 'view_b', 'title': 'Workspace', 'pano_folder': 'VR-VIEW-A_Alpha'}
-])
