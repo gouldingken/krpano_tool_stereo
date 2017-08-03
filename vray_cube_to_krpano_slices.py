@@ -24,13 +24,6 @@ def slice12(dir_name, image_path):
         '_f'
     ]
 
-    # Rotate DOWN image 90 deg Left (90 deg CCW)
-    # Rotate UP image 90 deg Right (90 deg CW)
-    # rotations = {
-    #     '_d': 90,
-    #     '_u': -90
-    # }
-
     # Front, Back, Left, Right → Flip horizontally
     # Up, Down → Flip vertically
 
@@ -61,8 +54,6 @@ def slice12(dir_name, image_path):
             tile = im.crop((x, 0, mx, my))
 
             suffix = suffixes[stepNum]
-            # if suffix in rotations:
-            #     tile = tile.rotate(rotations[suffix])
 
             tile = tile.transpose(flip[suffix])
 
